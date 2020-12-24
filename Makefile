@@ -6,7 +6,7 @@
 #    By: abonnel <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/29 10:45:55 by abonnel           #+#    #+#              #
-#    Updated: 2020/12/24 11:52:52 by abonnel          ###   ########lyon.fr    #
+#    Updated: 2020/12/24 13:07:54 by abonnel          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,13 +36,13 @@ RM		= rm -f
 CFLAGS	= -Wall -Wextra -Werror
 
 .c.o:
-			$(CC) $(CFLAGS) -c $< -o $(<:.c=.o) -I.
+			$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
 $(NAME):	$(OBJS)
 			ar rcs $(NAME) $(OBJS)
 
 bonus:		$(OBJS) $(O_BONUS)
-			ar rcs $(NAME) $(OBJS) $(O_BONUS)
+			ar rcs $(NAME) $(OBJS) $(O_BONUS) -I.
 
 all:		$(NAME)
 
