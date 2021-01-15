@@ -6,7 +6,7 @@
 #    By: abonnel <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/06 14:51:14 by abonnel           #+#    #+#              #
-#    Updated: 2021/01/15 14:33:11 by abonnel          ###   ########lyon.fr    #
+#    Updated: 2021/01/15 14:56:03 by abonnel          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ SRCS	= get_next_line.c get_next_line_utils.c
 
 OBJS	= $(SRCS:.c=.o)
 
-NAME	= gnl.a
+NAME	= libgnl.a
 
 CC		= gcc
 

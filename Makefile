@@ -6,7 +6,7 @@
 #    By: abonnel <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/29 10:45:55 by abonnel           #+#    #+#              #
-#    Updated: 2021/01/06 17:46:45 by abonnel          ###   ########lyon.fr    #
+#    Updated: 2021/01/15 14:56:14 by abonnel          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ CFLAGS	= -Wall -Wextra -Werror
 
 $(NAME):	$(OBJS)
 			$(MAKE) -C ./gnl
-			cp gnl/gnl.a $(NAME)
+			cp gnl/libgnl.a $(NAME)
 			ar rcs $(NAME) $(OBJS)
 			ranlib $(NAME)
 
