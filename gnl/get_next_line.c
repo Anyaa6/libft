@@ -6,7 +6,7 @@
 /*   By: abonnel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/06 14:59:12 by abonnel           #+#    #+#             */
-/*   Updated: 2021/01/06 14:59:16 by abonnel          ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 18:14:01 by abonnel          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,13 @@ void			free_set_null(char **ptr)
 	}
 }
 
+/*
+** GNL return value
+** 1 : a line was read
+** 0 : EOF
+** -1 : an error occured
+*/
+
 int				get_next_line(int fd, char **line)
 {
 	char			buf[BUFFER_SIZE + 1];
@@ -57,7 +64,7 @@ int				get_next_line(int fd, char **line)
 			return (nb_bytes);
 		}
 		buf[nb_bytes] = '\0';
-		s[fd] = ft_strjoin(s[fd], buf);
+		s[fd] = strjoin_gnl(s[fd], buf);
 	}
 	*line = substr_gnl(s[fd], 0, n_pos);
 	s[fd] = substr_gnl(s[fd], n_pos + 1, ft_strlen(s[fd]) - (n_pos + 1));
