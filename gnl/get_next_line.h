@@ -6,7 +6,7 @@
 /*   By: abonnel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 09:05:45 by abonnel           #+#    #+#             */
-/*   Updated: 2021/01/06 18:14:17 by abonnel          ###   ########lyon.fr   */
+/*   Updated: 2021/01/15 14:51:03 by abonnel          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <fcntl.h>
 
 char			*substr_gnl(char *s, unsigned int start, size_t len);
-char			*strjoin_gnl(char *s1, char *s2);
+char			*strjoin_free1(char *s1, char *s2);
 size_t			ft_strlen(const char *s);
 char			*ft_strdup(const char *s1);
 void			*ft_calloc(size_t count, size_t size);

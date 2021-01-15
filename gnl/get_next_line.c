@@ -6,7 +6,7 @@
 /*   By: abonnel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/06 14:59:12 by abonnel           #+#    #+#             */
-/*   Updated: 2021/01/06 18:14:01 by abonnel          ###   ########lyon.fr   */
+/*   Updated: 2021/01/15 14:50:52 by abonnel          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int				get_next_line(int fd, char **line)
 			return (nb_bytes);
 		}
 		buf[nb_bytes] = '\0';
-		s[fd] = strjoin_gnl(s[fd], buf);
+		s[fd] = strjoin_free1(s[fd], buf);
 	}
 	*line = substr_gnl(s[fd], 0, n_pos);
 	s[fd] = substr_gnl(s[fd], n_pos + 1, ft_strlen(s[fd]) - (n_pos + 1));

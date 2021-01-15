@@ -6,7 +6,7 @@
 #    By: abonnel <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/06 14:51:14 by abonnel           #+#    #+#              #
-#    Updated: 2021/01/06 15:08:08 by abonnel          ###   ########lyon.fr    #
+#    Updated: 2021/01/15 14:33:11 by abonnel          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,6 @@ clean:
 fclean:		clean
 			$(RM) $(NAME)
 
-re:
-			fclean all
+re:			fclean all
 
 .PHONY:		all clean fclean re

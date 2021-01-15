@@ -6,7 +6,7 @@
 /*   By: abonnel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/06 14:58:51 by abonnel           #+#    #+#             */
-/*   Updated: 2021/01/06 18:14:35 by abonnel          ###   ########lyon.fr   */
+/*   Updated: 2021/01/15 14:51:17 by abonnel          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ char			*ft_strdup(const char *s1)
 	return (s_bis);
 }
 
-char			*strjoin_gnl(char *s1, char *s2)
+char			*strjoin_free1(char *s1, char *s2)
 {
 	int				s1_len;
 	int				s2_len;
